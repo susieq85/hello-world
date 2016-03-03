@@ -29,22 +29,21 @@
     		color: #bbbbbb;
     	}
     	img{
-    		margin: 40px 0px 0px 0px;
+    		margin: 40px 10px 10px 10px;
     		border: 7px solid blue;
     		border-radius: 20px;
     	}
     	ul{
-    		padding: 2px;
+    		padding: 10px;
     		background: #f06;
     	}
     	li{
     		display: inline;
-    		padding:0px 2px 0px 2px;
+    		padding: 0px 10px 0px 10px;
     	}
     	article{
     		margin: 0 auto;
     		max-width: 500px;
-    		padding: 20px;
     	}
     	@media (max-width: 500px){
     		h1{
@@ -52,6 +51,7 @@
     			background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
   				background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
   				background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  				text-align:left;
     		}
     		li{
     			display: block;
@@ -60,6 +60,7 @@
     	}
     	p{
       		font-size: 23px;
+      		color: white;
       		background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
   			background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
   			background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
@@ -126,15 +127,15 @@
 		<h2>Desserts</h2>
 		<p>A selection of the best and most colourful and interesting desserts to finish off your meal.</p>
 		<button>Like</button>
+		<img src="/images/Japan.png">
 	</article>
 	<article>
 		<h2>Belfast Restaurants</h2>
 		<p>A list of Restaurants in Belfast with the best Japanese cuisine that you can find</p>
 		<button>Like</button>
 	</article>
-</body>
+
 <style>
-<body>
 	input{
       		border: 0;
       		padding: 10px;
@@ -151,5 +152,6 @@
 		}
 <script> $("button").on("click", function() { alert("clicked!") })
 </script>
+</style>
 </body>
 
