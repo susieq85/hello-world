@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <head>
-  <title>Eat Japanese-Coding Project</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("http://C.Users/Susie/Documents/GitHub/hello-world/Japan.jpg");
-      color: black;
-      font-family: helvetica;
-    }
-    p{
-      font-size: 22px;
-    }
-    input{
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
+	<link href="/normalize.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  	<title>Eat Japanese-Coding Project</title>
+  	<style>
+  		header {
+   			text-align: center;
+      		background: black;
+      		background:"image??";
+      		background-size: cover;
+      		background-position: center;
+      		color: white;
+      		font-family: helvetica;
+      	}
+      	a{
+      		color: white;
+    	}
+    	h1{
+    		font-size: 70px;
+    		font-family: 'Indie Flower', cursive;
+  			text-align: center;
+  			margin: 60px 0 0 0;
+  			color: #f40;
+    	}
+    	h2{
+    		text-align: center;
+    		margin: 0px 0 0 0;
+    		color: #bbbbbb;
+    	}
+    	img{
+    		margin: 40px 0px 0px 0px;
+    		border: 7px solid blue;
+    		border-radius: 20px;
+    	}
+    	ul{
+    		padding: 2px;
+    		background: #f06;
+    	}
+    	li{
+    		display: inline;
+    		padding:0px 2px 0px 2px;
+    	}
+    	article{
+    		margin: 0 auto;
+    		max-width: 500px;
+    		padding: 20px;
+    	}
+    	@media (max-width: 500px){
+    		h1{
+    			font-size: 36px;
+    			background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  				background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  				background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+    		}
+    		li{
+    			display: block;
+    			padding: 5px;
+    		}
+    	}
+    	p{
+      		font-size: 23px;
+      		background: linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  			background: -webkit-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  			background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+  			text-align: justify;
+ 			position: absolute;
+    	}
+    	input{
+      		border: 0;
+      		padding: 10px;
+      		font-size: 18px;
+    	}
     input[type="submit"]{
       background: yellow;
       color: black;
@@ -23,8 +78,78 @@
      </style>
 </head>
 <body>
-<img src="/images/Japan.png">
-<h1>Eat Japanese</h1>
-<p>All tasty things Japanese!</p>
-<input type="email" placeholder="Your email">
-<input type="submit">
+	<header>
+		<img src="/images/Japan.png">
+		<h1>Eat Japanese</h1>
+		<h2>All tasty things Japanese!</h2>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Appetizers</a></li>
+			<li><a href="#">Rice and Noodles</a></li>
+			<li><a href="#">Mains</a></li>
+			<li><a href="#">Sides</a></li>
+			<li><a href="#">Desserts</a></li>
+			<li><a href="#">Menu Ideas</a></li>
+			<li><a href="#">Belfast Restaurants</a></li>
+		</ul>
+	</header>
+	<article>
+		<h2>About</h2>
+		<p>This is a collection of all the very best from Japanese cusisine. The range of food on offer is aesthetically pleasing to the eye, and the colours and simplicity of the food show how you can make your favourite dish taste as good as your favourite restaurant.</p>
+		<button>Like</button>
+	</article> 
+	<article>
+		<h2>Appetizers</h2>
+		<p>A selection of the best appetizers and soups to start your meal off well</p>
+		<button>Like</button>
+		<img src="/images/.png">
+	</article>
+	<article>
+		<h2>Rice and Noodles</h2>
+		<p>A selection of the easiest and tastiest rice and noodle dishes to satisfy your tastebuds</p>
+		<button>Like</button>
+		<img src="/images/Japan.png">
+	</article>
+	<article>
+		<h2>Mains</h2>
+		<p>A selection of Main dishes, including fish, chicken, beef, pork and vegetarian</p>
+		<button>Like</button>
+		<img src="/images/Japan.png">
+	</article>
+	<article>
+		<h2>Sides</h2>
+		<p>A selection of complimentary side dishes to accompany any main meal. gauranteed to complete your meal</p>
+		<button>Like</button>
+		<img src="/images/Japan.png">
+	</article>
+	</article>
+		<h2>Desserts</h2>
+		<p>A selection of the best and most colourful and interesting desserts to finish off your meal.</p>
+		<button>Like</button>
+	</article>
+	<article>
+		<h2>Belfast Restaurants</h2>
+		<p>A list of Restaurants in Belfast with the best Japanese cuisine that you can find</p>
+		<button>Like</button>
+	</article>
+</body>
+<style>
+<body>
+	input{
+      		border: 0;
+      		padding: 10px;
+      		font-size: 18px;
+    	}
+    input[type="submit"]{
+      background: yellow;
+      color: black;
+  }
+    input [type="email"]{ 
+    	placeholder:"Enter your email address";
+    }
+	input [type="submit"]{
+		}
+<script> $("button").on("click", function() { alert("clicked!") })
+</script>
+</body>
+
